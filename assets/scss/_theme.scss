@@ -1,0 +1,23 @@
+[data-theme=dark] {
+    
+  
+    --color-text-default: rgba(255, 255, 255, 0.65);
+    --color-text-1: rgba(255, 255, 255, 0.1);
+
+    //contrast color / Pro theme usually backgrounds
+    --color-bg-default: black; 
+    --color-bg-default--rgb: 0,0, 0; 
+    --color-bg-1: rgb(24, 24, 24);
+
+  }
+
+[data-theme=default] {
+  --color-text-default: rgba(255, 255, 255, 0.65);
+  --color-text-default: black;
+  --color-text-1: rgba(255, 255, 255, 0.1);
+
+//contrast pro theme color
+--color-bg-default:white;
+--color-bg-default--rgb: 255,255, 255; 
+--color-bg-1: rgb(250, 250, 250);
+}

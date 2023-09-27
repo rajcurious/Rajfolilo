@@ -1,0 +1,45 @@
+
+
+
+@keyframes upDown {
+    0% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+  }
+  @keyframes swing {
+    0% {
+        transform: rotateZ(-10deg) ;
+    }
+
+    100% {
+        transform: rotateZ(20deg);
+    }
+  }
+  
+  .thanos {
+    animation: thanosSnap 2s linear;
+  }
+
+  .animation-updown{
+    animation: upDown 1s ease-in-out alternate infinite;
+    // background: green;
+  }
+
+  .animation-swing{
+    animation: swing 800ms alternate linear infinite;
+  }
+
+  //AOS animation
+  [data-aos="laptop"] {
+    opacity: 0;
+    transform: rotateX(90deg);
+    transition-property: transform, opacity;
+  
+    &.aos-animate {
+      opacity: 1;
+      transform: rotateX(0deg);
+  }
+}

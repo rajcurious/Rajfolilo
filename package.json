@@ -6,11 +6,27 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.0",
-    "nuxt": "^3.6.5"
+    "autoprefixer": "^10.4.14",
+    "gsap": "^3.12.2",
+    "nuxt": "^3.6.5",
+    "nuxt-icon": "^0.4.2",
+    "postcss": "^8.4.27",
+    "sass": "^1.64.1",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11",
+    "aos": "^2.3.4",
+    "gh-pages": "^5.0.0",
+    "pinia": "^2.1.6"
+  },
+  "overrides": {
+    "vue": "3.*"
   }
 }
