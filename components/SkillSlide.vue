@@ -101,7 +101,7 @@ export default {
           visibility: hidden;
 
           span{
-            font-size:max(16  px, 1vw);
+            font-size:max(16px, 1vw);
           }
 
         }
