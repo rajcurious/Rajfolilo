@@ -96,7 +96,6 @@ import { useConfigStore } from "../stores/ConfigStore";
           scrub: true,
           start: "top top",
           end: "+=100%",
-          markers: true,
           onEnter: this.onEnter,
           onLeaveBack: this.onLeaveBack
         },
@@ -109,7 +108,6 @@ import { useConfigStore } from "../stores/ConfigStore";
           scrub: true,
           start: "top 50%",
           end: "bottom bottom",
-          markers:true
 
         },
       });

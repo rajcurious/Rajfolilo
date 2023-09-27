@@ -96,7 +96,6 @@ export default {
           scrub: true,
           start: "top top",
           end: "bottom top",
-          markers: true,
           onEnterBack: this.onEnterBack,
           onLeave: this.onLeave,
         },

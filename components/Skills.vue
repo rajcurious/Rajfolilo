@@ -207,27 +207,6 @@ export default {
         },
         ease: "none",
       });
-
-      const contactTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#contact",
-          scrub: true,
-          // pin: true,
-          start: "top 90%",
-          end: "+=100%",
-
-        },
-      });
-      contactTl
-        .fromTo("#contact", {
-          filter: "brightness(0)",
-          duration: 1,
-          // backgroundColor: "rgba(25, 126, 160, 0)",
-          ease: "linear",
-        },
-        {
-          filter: "brightness(1)"
-        },"<0")
     },
     hexagonClass(i) {
       const row = Math.floor(i / 5);

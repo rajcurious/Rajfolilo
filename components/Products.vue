@@ -85,7 +85,6 @@ export default {
           start: "top top",
           // snap:true, Test this with suitable deaply b/w the different timeslines.
           end: "+=300%", // General rule: shoudl be choosen on weighted duration of slides or transitions you want to show,  Here: {1* 2 slides + 2 * 1latop }
-          markers: true,
           onEnter: this.onEnter,
           onEnterBack: this.onEnterback,
           onLeave: this.onLeave,
@@ -160,7 +159,6 @@ export default {
           {
             y: "30vh",
             autoAlpha: 1,
-            marker: true,
           },
           "<"
         )
