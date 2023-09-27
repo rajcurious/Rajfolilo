@@ -13,7 +13,8 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   app:{
-    baseURL: '/rajpatelfolio/'
+    baseURL: '/rajpatelfolio/',
+    buildAssetsDir: 'assets',
   },
   vite:{
     css:{
