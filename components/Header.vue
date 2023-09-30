@@ -17,8 +17,9 @@
     <div class="menu-button" @click="toggleDrawer">
       <Icon name="material-symbols:close" v-if="isDrawerOpen"/>
       <div  class = "menu-closed" v-else >
-        <Icon name="fluent:navigation-16-regular" class="icon" />
-        <span class="current-section">{{capitalizeFirstCharacter(this.currentSection)}}</span>
+        
+      <Icon name="fluent:navigation-16-regular" class="icon" />
+      <span class="current-section">{{capitalizeFirstCharacter(this.currentSection)}}</span>
       </div>
     </div>
     <nav v-if="isDrawerOpen">
@@ -27,7 +28,7 @@
           :class="{ current: this.currentSection == section }"
           v-for="section in sections"
           :key="section"
-          @click="isDrawerOpen=false & this.scrollGsap(section)"
+          @click="handleScrollInPhoneMode(section)"
         >
           <a :href="`#${section}`"></a> {{ capitalizeFirstCharacter(section) }}
           
@@ -92,6 +93,10 @@ export default {
     ...mapActions(useConfigStore, {
       toggleTheme: "toggleTheme",
     }),
+    handleScrollInPhoneMode(section){
+      this.toggleDrawer();
+       this.scrollGsap(section);
+    },
     scrollGsap(section){
       const sectionToScrollTo = document.getElementById(this.sectionIdMap[section]);
       let scrollY =  sectionToScrollTo.offsetTop;

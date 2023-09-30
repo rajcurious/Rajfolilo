@@ -12,10 +12,7 @@
 
     <div class="app-demo layer parallax" data-depth="-1.8">
       <img src="@/assets/images/iphone.png" class="iphone-frame" />
-      <video autoplay loop class="app-screen">
-        <source src="@/assets/images/project-1-edited.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <img src="@/assets/images/ezgif-4-d906515c70.gif" class="app-screen"/>
     </div>
 
     <div class="info">
@@ -48,26 +45,6 @@ export default {
     ...mapActions(useConfigStore, {
       updateSection: "updateCurrentSection",
     }),
-    pauseNplay() {
-      const video = document.querySelector(".app-screen");
-
-      video.addEventListener("ended", function () {
-        // Pause the video
-        video.pause();
-
-        // Delay for 5 seconds (5000 milliseconds)
-        setTimeout(function () {
-          // Reset the video currentTime to 0
-          video.currentTime = 0;
-          // Play the video
-          video.play();
-        }, 5000);
-      });
-    },
-
-    // onEnterBack() {
-    //   this.updateSection("projects");
-    // },
     projectGsap() {
       gsap.from("#project-1", {
         scrollTrigger: {
@@ -135,8 +112,8 @@ export default {
     .app-screen {
       position: absolute;
       width: calc((447 / 906) * 60vh - (447 / 906)*10vh);
-      top: 2vh;
-      height: 59vh;
+      top: 10vh;
+      // height: 59vh;
       // left: calc(20vw + 1vw);
       left: 50%;
       transform: translate(-50%);

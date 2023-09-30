@@ -59,7 +59,7 @@ export default {
 
   .about-wrapper {
     margin: auto;
-    width: 80%;
+    width: 90%;
     height: 100vh - var(--app-header-height);
   }
 
